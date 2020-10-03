@@ -1,10 +1,12 @@
 $( document ).ready(function() {
   $('.js-click-modal').click(function(){
     $('.page-wrapper').addClass('modal-open');
+    $('.container').addClass('blur-it');
   });
   
   $('.js-close-modal').click(function(){
     $('.page-wrapper').removeClass('modal-open');
+    $('.container').removeClass('blur-it');
   });
   $('.trigger2').on('click', function() {
     if($('html').hasClass('light-theme')) {
